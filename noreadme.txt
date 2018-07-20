@@ -1,4 +1,6 @@
-﻿I add some words to the top!
+﻿Linux之父Linus Torvalds（中文译作：林纳斯·托瓦兹）
+
+I add some words to the top!
 
 Git：分布式版本控制系统
 第一步：创建仓库，一般一个仓库就是一个工程，可以存放文件夹，图片等数据。
@@ -54,7 +56,12 @@ $ git reflog
 
 //工作区和暂存区，讲新增或者是修改的文件加入暂存区，提交之后暂存区为空
 
-
+//将本地的仓库和GitHub的仓库关联
+$ git remote add origin git@github.com:mavenjar/learngit.git
+//将本地仓库的内容推送到远程库上面，需要加上-u参数，将本地的master分支push的远程的master分支，还会进行关联，以后进行推送可以简化
+$ git push -u origin master
+//直接push
+$ git push origin master
 
 
 
